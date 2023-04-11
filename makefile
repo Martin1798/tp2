@@ -6,6 +6,7 @@ CFLAGS=-c -Wall
 
 # Directorios de origen y destino
 SRC_DIR=src
+INC_DIR=inc
 OBJ_DIR=build/obj
 BIN_DIR=build/bin
 
@@ -23,7 +24,9 @@ $(EXECUTABLE): $(OBJECTS)
 
 # Regla para construir los objetos
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
-	$(CC) $(CFLAGS) $< -o $@
+	mkdir -p $(OBJ_DIR)
+	mkdir -p $(BIN_DIR)
+	$(CC) $(CFLAGS) $< -o $@ -I $(INC_DIR)
 
 # Limpiar archivos generados
 clean:
