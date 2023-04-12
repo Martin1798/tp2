@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['nombre_3',['nombre',['../structalumno__s.html#a891a8334605705a822ca4daefb7b36f2',1,'alumno_s']]]
+  ['main_6',['main',['../main_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main.c']]],
+  ['main_2ec_7',['main.c',['../main_8c.html',1,'']]]
 ];
